@@ -1,0 +1,294 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
+
+
+}
+
+
+
+/* Fade-in effect for the new page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body,
+fade-out {
+  background-image: url("https://i.giphy.com/media/fSgTLv8bxYc6c/giphy.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: 300px;
+
+}
+
+/* Initial fade-in for body */
+body {
+  animation: fadeIn 1s ease-in-out;
+
+
+
+  /* background-color: #7fcdff; */
+
+
+
+  height: 100%;
+  width: 100%;
+
+
+
+}
+
+/* Fade-out class for outgoing animation */
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards;
+
+
+
+
+  /* background-color: #7fcdff; */
+
+  position: absolute;
+  z-index: 6;
+
+
+  height: 100%;
+  width: 100%;
+
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+
+
+}
+
+
+.sea {
+  background-color: #7fcdff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  background-image: url('fish.png');
+
+
+
+  background-size: 600px;
+}
+
+.img {
+  height: 250px;
+}
+
+.popupBtn {
+  background-color: #68a691;
+  color: white;
+  border: none;
+
+  border-radius: 0.5rem;
+
+  line-height: 3px;
+
+  margin: 1rem;
+
+}
+
+.popup-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.challenges-wrapper {
+  display: none;
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.popup-1 {
+  margin-right: 1rem;
+}
+
+.popup-2 {
+  margin-left: 1rem;
+}
+
+.popup {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: space-between;
+
+
+
+
+
+  background-color: #f5deb3;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.challengesBtnText {
+  color: #050A30;
+
+}
+
+.challengesBtn {
+  box-shadow: 0px 3px 0px 1px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.5s, transform 0.5s;
+  border-radius: 90px;
+  background-color: #68a691;
+  border: 3px solid #f5deb3;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+
+.challengesBtn:hover {
+  transform: translateY(3px);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+.challengesDiv {
+  position: absolute;
+
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+
+
+
+
+
+}
+
+.title {
+  color: whitesmoke;
+  font-weight: 800;
+
+  padding: 20px;
+  padding-top: 10px;
+  /* border-radius: 30px; */
+  /* background-color: #f5deb3; */
+
+
+}
+
+/* .grid-container { */
+/* display: inline-grid; */
+/* } */
+
+.clickable {
+  transition: all 0.2s ease-in-out;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.clickable:hover {
+  scale: 1.1;
+  transform: translateY(-10px);
+  /* cursor: pointer; */
+}
+
+.grid-container {
+  align-items: center;
+  display: flex;
+}
+
+.land {
+
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+
+  background-image: url('trees.png');
+
+  background-position: center;
+
+
+  background-size: 800px;
+
+  background-color: #68a691;
+
+  /* display: grid; */
+  margin: 1rem;
+  padding: 2rem;
+  padding-top: 2rem;
+  clip-path: polygon(9% 1%, 16% 0, 26% 4%, 36% 4%, 46% 3%, 55% 6%, 61% 6%, 72% 3%, 83% 2%, 91% 4%, 94% 8%, 94% 15%, 94% 21%, 97% 26%, 96% 35%, 95% 44%, 96% 50%, 98% 59%, 95% 66%, 95% 78%, 97% 83%, 93% 93%, 88% 96%, 78% 94%, 72% 93%, 64% 94%, 51% 95%, 42% 92%, 35% 94%, 21% 93%, 11% 94%, 6% 88%, 5% 80%, 8% 74%, 3% 66%, 7% 56%, 5% 47%, 5% 38%, 9% 31%, 4% 25%, 7% 18%, 5% 11%);
+}
+
+.sand {
+  width: 80%;
+  height: 80%;
+
+  background-color: #f5deb3;
+  padding: 0.75rem;
+  clip-path: polygon(9% 1%, 16% 0, 26% 4%, 36% 4%, 46% 3%, 55% 6%, 61% 6%, 72% 3%, 83% 2%, 91% 4%, 94% 8%, 94% 15%, 94% 21%, 97% 26%, 96% 35%, 95% 44%, 96% 50%, 98% 59%, 95% 66%, 95% 78%, 97% 83%, 93% 93%, 88% 96%, 78% 94%, 72% 93%, 64% 94%, 51% 95%, 42% 92%, 35% 94%, 21% 93%, 11% 94%, 6% 88%, 5% 80%, 8% 74%, 3% 66%, 7% 56%, 5% 47%, 5% 38%, 9% 31%, 4% 25%, 7% 18%, 5% 11%);
+}
+
+.credits {
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

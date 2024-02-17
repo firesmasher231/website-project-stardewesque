@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="music">
+    <audio autoplay id="music">
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  
+  <div class="challengesDiv">
+    <button class="challengesBtn" onclick="showChallenges()">
+      <h3 class="challengesBtnText"">
+
+        Click for Text Inputs
+      </h3>
+    </button>
+  </div>
+
+  <div 
+    id="challenges-wrapper" class="challenges-wrapper">
+        <div class="popup">
+          <div class="popup-header">
+            <div>
+              <h2>Challenges</h2>
+            </div>
+            <div>
+              <button onclick="closePopup()">
+
+                <img src="x.svg" alt="Close" height="25px" />
+              </button>
+            </div>
+          </div>
+          <div class="popup-content">
+
+            <div class="popup-1">
+              <p>User Name</p>
+              <textarea id="uName1"></textarea>
+              <p>User Age</p>
+              <textarea id="uAge1"></textarea>
+              <br>
+              <button class="popupBtn" onclick="calcAge()">
+                <h4>
+                  Calculate:
+                </h4>
+              </button>
+              <p>Outcome:</p>
+              <textarea id="Out1"></textarea>
+            </div>
+            <div class="popup-2">
+              <p>User Name</p>
+              <textarea id="uName2"></textarea>
+              <p>Desired Food Cuisine</p>
+              <textarea id="uCuisine2"></textarea>
+              <br>
+              <button class="popupBtn" onclick="calcFood()"">
+                <h4>
+                  Calculate:
+                </h4>
+              </button>
+              <p>Outcome:</p>
+              <textarea id=" Out2"></textarea>
+
+            </div>
+          </div>
+        </div>
+
+  </div>
+
+  <div id="sea" class="sea">
+    <div class="sand">
+      <div class="land">
+        <div style="flex-direction: row; display: flex;">
+          <div style="flex-direction: column; display: flex;">
+
+          
+          <div class="clickable grid-container">
+            <a href="gpo.html">
+              <image src="gpo.png" class="img" />
+            </a>
+          </div>
+          <div class="clickable grid-container">
+            <a href="storehouse.html">
+              <image src="storehouse.png" class="img" />
+            </a>
+          </div>
+        </div>
+        <div class="grid-container">
+          <h1 class=" title">
+            Island of Ireland ☘️
+          </h1>
+        </div>
+        <div>
+
+          <div class="clickable grid-container">
+            <a href="castle.html">
+              <image src="castle.png" class="img" />
+            </a>
+          </div>
+          <div class="clickable grid-container">
+            <a href="templebar.html">
+              <image src="templebar.png" class="img" />
+            </a>
+          </div>
+          </div>
+            
+          
+    
+        </div>
+
+        <div class="credits">
+          <h4>made by aj 👾</h4>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

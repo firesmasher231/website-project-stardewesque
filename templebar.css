@@ -1,0 +1,99 @@
+.homeimg {
+  height: 150px;
+}
+
+.land {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.navigation {
+
+  padding-top: 2rem;
+
+  width: 100%;
+  margin-right: 1rem;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content {
+  align-items: center;
+}
+
+.nightlife {
+
+  color: #c82d2d;
+  font-weight: bold;
+  letter-spacing: 1.2;
+  font-size: 30px;
+
+  border-bottom: 2px solid #c82d2d;;
+
+}
+
+.gif {
+  width: 150px;
+}
+
+table {
+  padding: 0.25rem;
+  border: 1px solid #000110;
+  background-color: #313687;
+}
+
+a:link {
+  color: #f5deb3;
+
+}
+
+td {
+  padding: 0.25rem;
+}
+
+a:link {
+  color: #f5deb3;
+}
+
+a:visited {
+  color: #f5deb3;
+}
+
+a:hover {
+  color: #f5deb3;
+}
+
+a:active {
+  color: #f5deb3;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  margin: 8rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+
+  gap: 2rem;
+  /* color: #050A30; */
+  color: whitesmoke;
+  font-size: 20px;
+
+}
+
+.contentImg {
+  height: 300px;
+  margin-left: 2rem;
+}
+
+.imgText {
+  width: 40%;
+}
